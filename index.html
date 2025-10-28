@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waqart Landing Page</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Open Sans"', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                DEFAULT: '#111827',
+                foreground: '#F9FAFB',
+              },
+              accent: {
+                DEFAULT: '#4F46E5',
+                foreground: '#EEF2FF',
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="h-full bg-slate-50 font-sans text-slate-900">
+    <div class="flex min-h-screen flex-col">
+      <header class="border-b border-slate-200 bg-white">
+        <div class="mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-6 py-4">
+          <div class="flex items-center gap-3">
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-sm font-semibold uppercase text-accent-foreground">WQ</span>
+            <div>
+              <h1 class="text-xl font-semibold text-slate-900">Waqart</h1>
+              <p class="text-sm text-slate-500">Discover curated digital art pieces</p>
+            </div>
+          </div>
+          <nav class="hidden items-center gap-4 text-sm font-medium text-slate-600 lg:flex">
+            <a class="hover:text-slate-900" href="#">Home</a>
+            <a class="hover:text-slate-900" href="#collection">Collection</a>
+            <a class="hover:text-slate-900" href="#about">About</a>
+            <a class="hover:text-slate-900" href="#contact">Contact</a>
+          </nav>
+          <button class="inline-flex items-center justify-center rounded-md border border-transparent bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground shadow-sm transition hover:bg-indigo-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300 focus-visible:ring-offset-2">Sign Up</button>
+        </div>
+      </header>
+
+      <div class="flex flex-1">
+        <aside class="hidden w-64 border-r border-slate-200 bg-white px-6 py-8 lg:block">
+          <div class="mb-8">
+            <h2 class="text-sm font-semibold uppercase tracking-wide text-slate-500">Browse</h2>
+            <ul class="mt-4 space-y-3 text-sm text-slate-600">
+              <li>
+                <a class="flex items-center justify-between rounded-md bg-slate-100 px-3 py-2 font-medium text-slate-900" href="#">Featured</a>
+              </li>
+              <li>
+                <a class="flex items-center justify-between rounded-md px-3 py-2 hover:bg-slate-100" href="#">New Arrivals</a>
+              </li>
+              <li>
+                <a class="flex items-center justify-between rounded-md px-3 py-2 hover:bg-slate-100" href="#">Trending</a>
+              </li>
+              <li>
+                <a class="flex items-center justify-between rounded-md px-3 py-2 hover:bg-slate-100" href="#">Collections</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-sm font-semibold uppercase tracking-wide text-slate-500">Categories</h2>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li><a class="block rounded-md px-3 py-2 hover:bg-slate-100" href="#">Abstract</a></li>
+              <li><a class="block rounded-md px-3 py-2 hover:bg-slate-100" href="#">Portrait</a></li>
+              <li><a class="block rounded-md px-3 py-2 hover:bg-slate-100" href="#">Landscape</a></li>
+              <li><a class="block rounded-md px-3 py-2 hover:bg-slate-100" href="#">3D Art</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <main class="flex-1">
+          <section class="border-b border-slate-200 bg-white px-6 py-12" id="hero">
+            <div class="mx-auto max-w-4xl text-center">
+              <span class="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-600">Curated by artists</span>
+              <h2 class="mt-6 text-3xl font-semibold text-slate-900 sm:text-4xl">Elevate your space with inspiring digital art</h2>
+              <p class="mt-4 text-base text-slate-600">Browse exclusive drops, discover emerging artists, and personalize your collection with handpicked digital masterpieces.</p>
+              <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+                <a
+                  class="inline-flex items-center justify-center rounded-md border border-transparent bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground shadow-sm transition hover:bg-indigo-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300 focus-visible:ring-offset-2"
+                  href="#collection"
+                >Explore Collection</a>
+                <a
+                  class="inline-flex items-center justify-center rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 focus-visible:ring-offset-2"
+                  href="#about"
+                >Learn More</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="px-6 py-12" id="collection">
+            <div class="mx-auto max-w-6xl">
+              <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <h3 class="text-2xl font-semibold text-slate-900">Featured Artworks</h3>
+                  <p class="mt-1 text-sm text-slate-600">Handcrafted visuals curated for collectors and enthusiasts.</p>
+                </div>
+                <button class="inline-flex items-center justify-center rounded-md border border-transparent bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 focus-visible:ring-offset-2">View all</button>
+              </div>
+
+              <div class="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+                <article class="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                  <img class="h-48 w-full object-cover transition duration-300 group-hover:scale-105" src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=800&q=80" alt="Colorful abstract art" />
+                  <div class="space-y-2 px-5 py-4">
+                    <h4 class="text-lg font-semibold text-slate-900">Chromatic Dreams</h4>
+                    <p class="text-sm text-slate-600">A vibrant exploration of color and motion by Lina Gomez.</p>
+                  </div>
+                </article>
+
+                <article class="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                  <img class="h-48 w-full object-cover transition duration-300 group-hover:scale-105" src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=80" alt="Portrait artwork" />
+                  <div class="space-y-2 px-5 py-4">
+                    <h4 class="text-lg font-semibold text-slate-900">Ethereal Muse</h4>
+                    <p class="text-sm text-slate-600">Soft gradients capture the serenity of light and shadow.</p>
+                  </div>
+                </article>
+
+                <article class="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                  <img class="h-48 w-full object-cover transition duration-300 group-hover:scale-105" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Landscape artwork" />
+                  <div class="space-y-2 px-5 py-4">
+                    <h4 class="text-lg font-semibold text-slate-900">Midnight Valley</h4>
+                    <p class="text-sm text-slate-600">An immersive landscape that invites calm contemplation.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer class="border-t border-slate-200 bg-white">
+        <div class="mx-auto flex w-full max-w-7xl flex-col gap-4 px-6 py-6 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; <span id="year"></span> Waqart. All rights reserved.</p>
+          <div class="flex items-center gap-4">
+            <a class="hover:text-slate-900" href="#privacy">Privacy</a>
+            <a class="hover:text-slate-900" href="#terms">Terms</a>
+            <a class="hover:text-slate-900" href="#contact">Support</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
