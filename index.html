@@ -42,79 +42,177 @@
   </head>
   <body class="h-full bg-slate-50 font-sans text-slate-900">
     <div class="flex min-h-screen flex-col">
-      <header class="border-b border-slate-200 bg-white">
-        <div class="mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-6 py-4">
-          <div class="flex items-center gap-3">
-            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-sm font-normal uppercase text-accent-foreground">WQ</span>
-            <div>
-              <h1 class="text-xl font-medium text-slate-900">Waqart</h1>
-              <p class="text-sm text-slate-500">Discover curated digital art pieces</p>
+      <header class="relative overflow-hidden border-b border-black/10">
+        <div
+          class="absolute inset-0"
+          style="background: linear-gradient(135deg, #000000 0%, #1f1b2e 35%, #312e81 65%, #818cf8 100%);"
+        ></div>
+        <div class="relative mx-auto flex min-h-[50vh] w-full max-w-7xl flex-col px-6 py-6 text-white">
+          <div class="flex items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-sm font-normal uppercase text-white">WQ</span>
+              <div>
+                <h1 class="text-xl font-medium text-white">Waqart</h1>
+                <p class="text-sm text-white/70">Discover curated digital art pieces</p>
+              </div>
+            </div>
+            <nav class="hidden items-center gap-4 text-sm font-normal text-white/70 lg:flex">
+              <a class="transition hover:text-white" href="#">Home</a>
+              <a class="transition hover:text-white" href="#collection">Collection</a>
+              <a class="transition hover:text-white" href="#about">About</a>
+              <a class="transition hover:text-white" href="#contact">Contact</a>
+            </nav>
+            <a
+              class="inline-flex items-center justify-center rounded-md border border-white/40 bg-white/10 px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-0"
+              href="signup.html"
+            >
+              Sign Up
+            </a>
+          </div>
+          <div class="flex flex-1 items-center justify-center py-12 text-center">
+            <div class="max-w-3xl">
+              <span class="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-normal uppercase tracking-wide text-white/80">Curated by artists</span>
+              <h2 class="mt-6 text-3xl font-medium text-white sm:text-4xl">Elevate your space with inspiring digital art</h2>
+              <p class="mt-4 text-base text-white/80">Browse exclusive drops, discover emerging artists, and personalize your collection with handpicked digital masterpieces.</p>
+              <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+                <a
+                  class="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-2.5 text-sm font-medium text-slate-900 shadow-sm transition hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-0"
+                  href="#collection"
+                >Explore Collection</a>
+                <a
+                  class="inline-flex items-center justify-center rounded-md border border-white/50 px-5 py-2.5 text-sm font-normal text-white transition hover:border-white hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-0"
+                  href="#about"
+                >Learn More</a>
+              </div>
             </div>
           </div>
-          <nav class="hidden items-center gap-4 text-sm font-normal text-slate-600 lg:flex">
-            <a class="hover:text-slate-900" href="#">Home</a>
-            <a class="hover:text-slate-900" href="#collection">Collection</a>
-            <a class="hover:text-slate-900" href="#about">About</a>
-            <a class="hover:text-slate-900" href="#contact">Contact</a>
-          </nav>
-          <a
-            class="inline-flex items-center justify-center rounded-md border border-transparent bg-accent px-4 py-2 text-sm font-normal text-accent-foreground shadow-sm transition hover:bg-indigo-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300 focus-visible:ring-offset-2"
-            href="signup.html"
-          >
-            Sign Up
-          </a>
         </div>
       </header>
 
       <div class="flex flex-1">
         <aside class="hidden w-64 border-r border-slate-200 bg-white px-6 py-8 lg:block">
-          <div class="mb-8">
-            <h2 class="text-sm font-medium uppercase tracking-wide text-slate-500">Browse</h2>
-            <ul class="mt-4 space-y-3 text-sm text-slate-600">
-              <li>
-                <a class="flex items-center justify-between rounded-md bg-slate-100 px-3 py-2 font-normal text-slate-900" href="#">Featured</a>
-              </li>
-              <li>
-                <a class="flex items-center justify-between rounded-md px-3 py-2 hover:bg-slate-100" href="#">New Arrivals</a>
-              </li>
-              <li>
-                <a class="flex items-center justify-between rounded-md px-3 py-2 hover:bg-slate-100" href="#">Trending</a>
-              </li>
-              <li>
-                <a class="flex items-center justify-between rounded-md px-3 py-2 hover:bg-slate-100" href="#">Collections</a>
-              </li>
-            </ul>
-          </div>
           <div>
-            <h2 class="text-sm font-medium uppercase tracking-wide text-slate-500">Categories</h2>
-            <ul class="mt-4 space-y-2 text-sm text-slate-600">
-              <li><a class="block rounded-md px-3 py-2 hover:bg-slate-100" href="#">Abstract</a></li>
-              <li><a class="block rounded-md px-3 py-2 hover:bg-slate-100" href="#">Portrait</a></li>
-              <li><a class="block rounded-md px-3 py-2 hover:bg-slate-100" href="#">Landscape</a></li>
-              <li><a class="block rounded-md px-3 py-2 hover:bg-slate-100" href="#">3D Art</a></li>
-            </ul>
+            <h2 class="text-sm font-medium text-slate-900">Filter by Category</h2>
+            <div class="mt-5 flex flex-wrap gap-3">
+              <a
+                class="inline-flex items-center rounded-full border border-slate-900 bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-slate-800"
+                href="#"
+              >
+                All Components
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                Hero Area
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                Feature
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                Pricing
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                Testimonial
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                Brand
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                CTA
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                How It Works
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                Stats
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                Integration
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                About
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                FAQ
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                Case Study
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                Service
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                Contact
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                Blog
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                Team
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                404
+              </a>
+              <a
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-normal text-slate-600 transition hover:border-slate-300 hover:text-slate-900"
+                href="#"
+              >
+                Footer
+              </a>
+            </div>
           </div>
         </aside>
 
         <main class="flex-1">
-          <section class="border-b border-slate-200 bg-white px-6 py-12" id="hero">
-            <div class="mx-auto max-w-4xl text-center">
-              <span class="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-normal uppercase tracking-wide text-slate-600">Curated by artists</span>
-              <h2 class="mt-6 text-3xl font-medium text-slate-900 sm:text-4xl">Elevate your space with inspiring digital art</h2>
-              <p class="mt-4 text-base text-slate-600">Browse exclusive drops, discover emerging artists, and personalize your collection with handpicked digital masterpieces.</p>
-              <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
-                <a
-                  class="inline-flex items-center justify-center rounded-md border border-transparent bg-accent px-5 py-2.5 text-sm font-normal text-accent-foreground shadow-sm transition hover:bg-indigo-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300 focus-visible:ring-offset-2"
-                  href="#collection"
-                >Explore Collection</a>
-                <a
-                  class="inline-flex items-center justify-center rounded-md border border-slate-300 px-5 py-2.5 text-sm font-normal text-slate-700 transition hover:border-slate-400 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 focus-visible:ring-offset-2"
-                  href="#about"
-                >Learn More</a>
-              </div>
-            </div>
-          </section>
-
           <section class="px-6 py-12" id="collection">
             <div class="mx-auto max-w-6xl">
               <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
