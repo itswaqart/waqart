@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Waqart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Inter"', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                DEFAULT: '#111827',
+                foreground: '#F9FAFB',
+              },
+              accent: {
+                DEFAULT: '#4F46E5',
+                foreground: '#EEF2FF',
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-slate-50 font-sans text-slate-900">
+    <div class="flex min-h-screen flex-col">
+      <header class="border-b border-slate-200 bg-white">
+        <div class="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-4">
+          <a class="flex items-center gap-3" href="index.html">
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-sm font-normal uppercase text-accent-foreground">WQ</span>
+            <div>
+              <h1 class="text-xl font-medium text-slate-900">Join Waqart</h1>
+              <p class="text-sm text-slate-500">Create an account to personalize your collection</p>
+            </div>
+          </a>
+          <a
+            class="inline-flex items-center justify-center rounded-md border border-slate-300 px-4 py-2 text-sm font-normal text-slate-700 transition hover:border-slate-400 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 focus-visible:ring-offset-2"
+            href="index.html"
+          >
+            Back to Home
+          </a>
+        </div>
+      </header>
+
+      <main class="flex flex-1 items-center justify-center px-6 py-16">
+        <div class="w-full max-w-xl rounded-2xl border border-slate-200 bg-white p-10 shadow-sm">
+          <div class="mb-8 text-center">
+            <span class="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-normal uppercase tracking-wide text-slate-600">Sign up</span>
+            <h2 class="mt-4 text-3xl font-medium text-slate-900">Start collecting digital art today</h2>
+            <p class="mt-3 text-sm text-slate-600">
+              Build your own gallery, follow artists you love, and receive early access to exclusive drops.
+            </p>
+          </div>
+
+          <form class="space-y-6">
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="block text-sm font-normal text-slate-700">
+                First name
+                <input
+                  type="text"
+                  name="first-name"
+                  autocomplete="given-name"
+                  required
+                  class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-normal text-slate-900 shadow-sm transition focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+                  placeholder="Jane"
+                />
+              </label>
+              <label class="block text-sm font-normal text-slate-700">
+                Last name
+                <input
+                  type="text"
+                  name="last-name"
+                  autocomplete="family-name"
+                  required
+                  class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-normal text-slate-900 shadow-sm transition focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+                  placeholder="Doe"
+                />
+              </label>
+            </div>
+
+            <label class="block text-sm font-normal text-slate-700">
+              Email address
+              <input
+                type="email"
+                name="email"
+                autocomplete="email"
+                required
+                class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-normal text-slate-900 shadow-sm transition focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+                placeholder="you@example.com"
+              />
+            </label>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="block text-sm font-normal text-slate-700">
+                Password
+                <input
+                  type="password"
+                  name="password"
+                  autocomplete="new-password"
+                  required
+                  class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-normal text-slate-900 shadow-sm transition focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+                  placeholder="Create a password"
+                />
+              </label>
+              <label class="block text-sm font-normal text-slate-700">
+                Confirm password
+                <input
+                  type="password"
+                  name="confirm-password"
+                  autocomplete="new-password"
+                  required
+                  class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-normal text-slate-900 shadow-sm transition focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+                  placeholder="Re-enter password"
+                />
+              </label>
+            </div>
+
+            <label class="flex items-start gap-3 text-sm font-normal text-slate-600">
+              <input
+                type="checkbox"
+                name="terms"
+                required
+                class="mt-1 h-4 w-4 rounded border-slate-300 text-accent focus:ring-indigo-400"
+              />
+              <span>
+                I agree to the <a class="font-medium text-accent hover:text-indigo-500" href="#">Terms of Service</a> and
+                <a class="font-medium text-accent hover:text-indigo-500" href="#">Privacy Policy</a>.
+              </span>
+            </label>
+
+            <button
+              type="submit"
+              class="inline-flex w-full items-center justify-center rounded-lg border border-transparent bg-accent px-4 py-3 text-sm font-medium text-accent-foreground shadow-sm transition hover:bg-indigo-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300 focus-visible:ring-offset-2"
+            >
+              Create account
+            </button>
+          </form>
+
+          <p class="mt-6 text-center text-sm text-slate-600">
+            Already have an account?
+            <a class="font-medium text-accent hover:text-indigo-500" href="#">Sign in instead</a>.
+          </p>
+        </div>
+      </main>
+
+      <footer class="border-t border-slate-200 bg-white">
+        <div class="mx-auto flex w-full max-w-5xl flex-col gap-4 px-6 py-6 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; <span id="year"></span> Waqart. All rights reserved.</p>
+          <div class="flex items-center gap-4">
+            <a class="hover:text-slate-900" href="#privacy">Privacy</a>
+            <a class="hover:text-slate-900" href="#terms">Terms</a>
+            <a class="hover:text-slate-900" href="#contact">Support</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
